@@ -553,7 +553,7 @@ static int AnalyzePat(Splitter *sp, unsigned char *buf)
 //					*(retain_pids+0x26) = 1;		 // 車載用epg 規格のみで未送出のもよう
 					*(retain_pids+0x27) = 1;
 				}
-				else if(!strcasecmp(*p, "epg1seg")) {
+				else if(!strcasecmp(*p, "si")) {
 					/* 情報取得に必要なSIのPIDを保存する */
 					sid_found	= TRUE;
 					*(retain_pids+0x10) = 1;
