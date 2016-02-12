@@ -48,6 +48,7 @@ typedef struct _pmt_version {
  */
 typedef struct _splitter {
 	unsigned char	pids[MAX_PID];
+	unsigned char	retain_pids[MAX_PID];
 	unsigned char	pmt_pids[MAX_PID];
 	unsigned char*	pat;
 	char**			sid_list;
